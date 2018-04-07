@@ -6,6 +6,13 @@
 #else
         Unsupported Platform !!!
 #endif
+#include "display.h"
+
+Camera camera;
+
+unsigned int *pixels;
+int width = 640;
+int height = 480;
 
 double WallClockTime() {
 #if defined(__linux__) || defined(__MACOSX)

@@ -1,15 +1,7 @@
 #include <GL/glut.h>
 #include <math.h>
 #include <memory.h>
-#include "camera.h"
-
-extern void UpdateRendering(void);
-
-Camera camera;
-
-unsigned int *pixels;
-int width = 640;
-int height = 480;
+#include "display.h"
 
 void UpdateCamera(void) {
 	vsub(camera.dir, camera.target, camera.orig);
